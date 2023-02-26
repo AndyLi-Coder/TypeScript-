@@ -16,7 +16,7 @@ interface PointType {
 // type PointType1 = number | string
 // type PointType1 = number | string
 
-// interface 支持继承
+// 3. interface 支持继承
 interface IPerson {
   name: string;
   age: number;

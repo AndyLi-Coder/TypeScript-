@@ -41,12 +41,12 @@ function request(url: string, method: MethodType) {
     method:'post'
 } */
 const info = {
-    url:'xxx',
-    method:'post'
-} as const 
+    url: 'xxx',
+    method: 'post'
+} as const
 
 
-request(info.url,info.method)
+request(info.url, info.method)
 
 
 
