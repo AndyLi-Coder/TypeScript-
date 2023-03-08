@@ -9,7 +9,7 @@ function getLength(arg: ILength) {
 
 const length1 = getLength('1231')
 const length2 = getLength(['123', 'asda', '231'])
-const length3 = getLength({ length: 10 })
+const length3  = getLength({ length: 10 })
 
 
 
