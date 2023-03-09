@@ -10,13 +10,17 @@ module.exports = {
   resolve: {
     extensions: ['.ts', '.js', '.cjs', '.json']
   },
-  devServer:{},
+  devServer: {},
   module: {
     rules: [
       {
         test: /\.ts$/,
         loader: 'ts-loader'
-      }
+      },
+      {
+        test: /\.(png|jpe?g|svg)$/,
+        type: 'asset/resource',
+      },
     ]
   },
 
