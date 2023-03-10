@@ -1,7 +1,7 @@
 import fetch from "..";
 
-fetch.request({
+/* fetch.request({
   url: '/home/multidata',
 }).then(res => {
   console.log(res, '++')
-})
+}) */
