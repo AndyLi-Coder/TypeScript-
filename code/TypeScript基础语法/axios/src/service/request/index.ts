@@ -9,6 +9,15 @@ class Request {
     this.instance = axios.create(config)
 
     // 每个实例都添加请求拦截器
+    /**
+     * 两个难点:
+     *  1.拦截器进行精细控制
+     *    > 全局拦截器
+     *    > 实例拦截器
+     *    > 单次请求拦截器
+     * 
+     *  2.响应结果的类型处理(泛型)
+     */
 
     /**
      * 
@@ -94,6 +103,12 @@ class Request {
   }
   post<T = any>(config: AxiosConfig<T>) {
     return this.request({ ...config, method: 'POST' })
+  }
+  delete<T = any>(config: AxiosConfig<T>) {
+    return this.request({ ...config, method: 'DELETE' })
+  }
+  patch<T = any>(config: AxiosConfig<T>) {
+    return this.request({ ...config, method: 'PATCH' })
   }
 }
 
